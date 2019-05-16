@@ -1,7 +1,9 @@
-def most_text(file_path)
-  file = File.read(file_path).delete("\n").gsub(/[,.?!]/, "")
-  splitText = file.split.group_by(&:downcase).map {|key,value| [key, value.length]}
-  return splitText.max_by {|key, val| val}
+def letter_frequency(path_file)
+  file = File.read(path_file).delete(" \n")
+  fileSplit = file.split(//)
+  fileGroup = fileSplit.group_by(&:downcase).map {|key,value| [key, value.length]}
+  letterMax = fileGroup.max_by {|key, val| val}
+  return letterMax
 end
 
-puts most_text(ARGV[0])
+puts letter_frequency(ARGV[0])
