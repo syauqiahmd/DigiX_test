@@ -1,3 +1,3 @@
-#jawabab nomor 4
+#4
 
-from the explanation we get information how many wolfes to catch lambs, to catch sixty lambs in sixty minutes we need `6 wofls`... because the wolfe's 
+To catch sixty lambs in sixty minutes we need `6 wolfs`... because the 6 wolf's performance enough to catch sixty lambs in sixty minutes.
